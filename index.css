@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+    font-family: "open Sans";
+}
+ body{
+    margin: 0 0;
+}
+@media (min-width: 800px) and (orientation: landscape) {
+	.body {
+		width: 1440px;
+		height: 346px;
+	}
+}
+.contenedor-general{
+    width: 100%;
+    height: 100%;
+}
+.contenedor-superior{
+    width: 100%;
+    height: 603px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    width: 54px;
+    height: 50px;
+    margin: 18px 17px;
+    
+}
+
+.hamburger{
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    margin: 29px 20px;
+}
+@media (min-width: 800px) and (orientation: landscape) {
+    .hamburger {
+      display: none;
+    }
+  }
+   .botones-lateral {
+    display: none;
+  }
+
+  .bar{
+    display: block;
+    width: 36px;
+    height: 6px;
+    margin: 7px 0;
+    background-color: #141414;
+}
+@media (min-width: 800px) and (orientation: landscape){
+    .contenedor-inferior{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.bienvenida{
+    width: 291px;
+    height: 96px;
+    margin: 72px 42px;
+    text-align: center;
+    font-family: "open Sans";
+    font-size: 48px;
+}
+
+.foto-pablo{
+    width: 318px;
+    height: 300px;
+    margin: 0 30px;  
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+    .logo {
+		margin-top: 16px;
+		width: 100px;
+		height: 100px;
+	}
+    .bienvenida{text-align: left;
+		margin-right: 40px;
+		padding: 102px 17px 60px 17px;
+		font-family: Open Sans;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 48px;
+		letter-spacing: -1px;
+	}
+}
+.contenedor-presentacion{
+    background-color: #141414;
+    width: 375px;
+    height: 538px;
+}
+.mi-nombre{
+    text-align: center;
+padding-top: 55px;
+    font-family: "open Sans";
+    font-size: 32px;
+    color: #FAFAFA;
+}
+.bio{
+    color: #FAFAFA;
+    margin: 41px;
+    font-size: 16px;
+    font-family: "roboto";
+    text-align: center;
+    height: 193px;
+}
+.logo-check-dos{
+    width: 80px;
+    height: 80px;
+    margin: 0 148px;
+    margin-bottom: 68px;
+  }
+
+.contenedor-descripcion{
+    width: 100%;
+    height: 1375px;
+}
+.mis-servicios{
+    text-align: center;
+    margin-top: 70px;
+        font-family: "open Sans";
+        font-size: 32px;
+        
+}
+
+.caja{ 
+}
+.subcaja-uno, .subcaja-dos, .subcaja-tres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:  48.41px;
+    
+    
+}
+
+.logo-profesor{
+    width: 138px;
+    height: 128.03px;
+}
+.titulo-uno{
+    font-size: 24px;
+    font-family: "roboto";
+    text-align: center;
+    margin: 19px 52px;
+}
+.texto-uno{
+    font-size: 16px;
+    font-family: "roboto";
+    text-align: center;
+    color: #2C2C2C;
+    width: 262px;
+    height: 117px;
+}
+
+.logo-musica{
+    width: 138px;
+    height: 128.03px;
+}
+.titulo-dos{
+    font-size: 24px;
+    font-family: "roboto";
+    text-align: center;
+    margin: 19px 52px;
+}
+.texto-dos{
+    font-size: 16px;
+    font-family: "roboto";
+    text-align: center;
+    color: #2C2C2C;
+    width: 262px;
+    height: 117px;
+}
+
+.logo-computadora{
+    width: 138px;
+    height: 128.03px;
+}
+.titulo-tres{
+    font-size: 24px;
+    font-family: "roboto";
+    text-align: center;
+    margin: 19px 52px;
+}
+
+.texto-tres{
+    font-size: 16px;
+    font-family: "roboto";
+    text-align: center;
+    color: #2C2C2C;
+    width: 262px;
+    height: 117px;
+}
+.contenedor-input{
+    height: 660px; 
+    background-color:#141414;
+}
+.escribime{
+    text-align: center;
+    padding-top: 50px;
+        font-family: "open Sans";
+        font-size: 32px;
+        color:#FAFAFA
+}
+
+
+.label{
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FAFAFA;
+    margin: 36.42px 0 9px 0;
+    
+}
+.form{
+ margin-top: 20px;
+ width: 100%;
+ display: grid;
+gap:40px ;
+max-width: 450px;
+color:#FAFAFA;
+justify-items:  center;
+align-items: center;
+}
+
+.grupo-mensaje{
+    margin-left: 20px;
+}
+.input-text{
+    background-color:#FFFFFF;
+    border: none;
+    font-size: 24px;
+    display: block;
+    padding: 15px;
+    font-family: "Roboto" ;
+    width: 335px;
+    height: 4px;
+
+
+}
+.textarea{
+    box-sizing: border-box;
+  width: 335px;
+}
+.boton{
+    width: 335px;
+    height: 45px;
+    background-color: #FFD953;
+    font-family: Roboto;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.pie-pagina{
+padding: 53px 20px 113px 20px;
+background-color: #DBDBDB;
+
+}
+.grupo-uno{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 0 85px 0;                           
+}
+.logo-footer{
+    width: 79px;
+    height: auto;
+}
+.copyright {
+    margin: 18px 0 0 0;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+.grupo-dos{
+    display: flex;
+    vertical-align: middle;
+    padding-top: 20px;
+    }
+
+.redes-sociales {
+display: inline;
+  width: 38px;
+  height: 38px;
+  margin: 5px 0 0 0;
+}
+
+.nombre-redes-sociales{
+display: inline;
+  
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 7px;
+}
