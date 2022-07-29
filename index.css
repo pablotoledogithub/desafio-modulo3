@@ -15,6 +15,7 @@
     width: 100%;
     height: 100%;
 }
+
 .contenedor-superior{
     width: 100%;
     height: 603px;
@@ -30,7 +31,6 @@
     width: 54px;
     height: 50px;
     margin: 18px 17px;
-    
 }
 
 .hamburger{
@@ -43,11 +43,11 @@
     .hamburger {
       display: none;
     }
-  }
-   .botones-lateral {
-    display: none;
-  }
+}
 
+@media (min-width: 800px) and (orientation: landscape){
+   
+}
   .bar{
     display: block;
     width: 36px;
@@ -57,8 +57,10 @@
 }
 @media (min-width: 800px) and (orientation: landscape){
     .contenedor-inferior{
-        display: flex;
-        flex-direction: row;
+         height: 395px;
+    display: flex;
+    justify-content: space-between;
+    padding: 74px 0 0 0;
     }
 }
 .bienvenida{
@@ -71,9 +73,27 @@
 }
 
 .foto-pablo{
-    width: 318px;
+   width: 318px;
     height: 300px;
     margin: 0 30px;  
+}
+@media (min-width: 800px) and (orientation: landscape){
+    .foto-pablo{
+     
+        width: 435px;
+        height: 395px;
+        align-self: baseline;
+    
+    }
+}
+@media (min-width: 800px) and (orientation: landscape){
+    .imagen-pablo{
+        padding-bottom: 0;
+        }
+}
+
+.botones-lateral {   
+    display: none;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
@@ -84,62 +104,147 @@
 	}
     .bienvenida{text-align: left;
 		margin-right: 40px;
-		padding: 102px 17px 60px 17px;
+		
 		font-family: Open Sans;
 		font-size: 48px;
 		font-weight: 700;
 		line-height: 48px;
 		letter-spacing: -1px;
 	}
+    .botones-lateral {
+        margin-right: 60px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+       }
+
+
+
 }
-.contenedor-presentacion{
+.contenedor-presentacion-info{
     background-color: #141414;
-    width: 375px;
+    width: 100%;
     height: 538px;
+    
 }
+@media (min-width: 800px) and (orientation: landscape) {
+    .contenedor-presentacion-info {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      padding-right: 20px;
+
+    }
+  }
+  @media (min-width: 800px) and (orientation: landscape) {
+    .contenedor-presentacion-texto {
+        display: flex;
+      flex-direction: column;
+      max-width: 532px;
+      
+      margin-bottom: 40px;
+    }
+  }
+
+
 .mi-nombre{
     text-align: center;
-padding-top: 55px;
+    padding-top: 55px;
     font-family: "open Sans";
     font-size: 32px;
     color: #FAFAFA;
 }
+@media (min-width: 800px) and (orientation: landscape) {
+    .mi-nombre {
+      text-align: left;
+      padding-top: none;
+    }
+  }
+
 .bio{
-    color: #FAFAFA;
-    margin: 41px;
-    font-size: 16px;
-    font-family: "roboto";
-    text-align: center;
+    margin: 41px 32px 57px 32px;
     height: 193px;
+    width: auto;
+    color: #FAFAFA;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
 }
+@media (min-width: 800px) and (orientation: landscape) {
+    .bio {
+      margin:0;
+      height: 165px;
+      max-width: 350px;
+      
+    }
+  }
+
+
+.contenedor-logo-dos{
+    width: 100%;
+}
+@media (min-width: 800px) and (orientation: landscape){
+    .contenedor-logo-dos{
+       width: 500px;
+
+    }
+}
+
 .logo-check-dos{
     width: 80px;
     height: 80px;
     margin: 0 148px;
-    margin-bottom: 68px;
-  }
+}
+@media (min-width: 800px) and (orientation: landscape){
+    .logo-check-dos{
+        width: 200px;
+        height: 200px;
+        margin-left: 200px;
+    }
+}
 
 .contenedor-descripcion{
     width: 100%;
     height: 1375px;
 }
+@media (min-width: 800px) and (orientation: landscape){
+    .contenedor-descripcion{
+        width: 100%;
+        height: 604px;
+    }
+}
+
 .mis-servicios{
     text-align: center;
     margin-top: 70px;
         font-family: "open Sans";
         font-size: 32px;
-        
 }
-
-.caja{ 
+@media (min-width: 800px) and (orientation: landscape){
+    .mis-servicios{
+        text-align: center;
+        margin-top: 70px;
+        font-family: "open Sans";
+        font-size: 48px;
+}
+}
+@media (min-width: 800px) and (orientation: landscape){
+    .caja{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
 }
 .subcaja-uno, .subcaja-dos, .subcaja-tres{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top:  48.41px;
-    
-    
 }
 
 .logo-profesor{
@@ -199,9 +304,19 @@ padding-top: 55px;
     width: 262px;
     height: 117px;
 }
+
+
 .contenedor-input{
     height: 660px; 
     background-color:#141414;
+}
+@media (min-width: 800px) and (orientation: landscape){
+    .contenedor-input{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 116px 0 116px 0;
+    }
 }
 .escribime{
     text-align: center;
@@ -209,6 +324,17 @@ padding-top: 55px;
         font-family: "open Sans";
         font-size: 32px;
         color:#FAFAFA
+}
+
+@media (min-width: 800px) and (orientation: landscape){
+    .escribime{
+        text-align:left;
+        padding-top: 0px;
+            font-family: "open Sans";
+            font-size: 32px;
+            display: inline;
+            color:#FAFAFA
+    }
 }
 
 
@@ -246,8 +372,6 @@ align-items: center;
     font-family: "Roboto" ;
     width: 335px;
     height: 4px;
-
-
 }
 .textarea{
     box-sizing: border-box;
@@ -269,18 +393,36 @@ align-items: center;
 .pie-pagina{
 padding: 53px 20px 113px 20px;
 background-color: #DBDBDB;
-
 }
+@media (min-width: 800px) and (orientation: landscape){
+    .pie-pagina{
+    height: 346px;
+    }
+}
+
 .grupo-uno{
     display: flex;
     flex-direction: column;
-
     padding: 0 0 85px 0;                           
 }
+@media (min-width: 800px) and (orientation: landscape){
+    .grupo-uno{
+        display: inline-flex;
+        padding: 50px 80px;
+    }
+}
+
 .logo-footer{
     width: 79px;
     height: auto;
 }
+@media (min-width: 800px) and (orientation: landscape){
+    .logo-footer{
+        width: 112px;
+        height: auto;
+}
+}
+
 .copyright {
     margin: 18px 0 0 0;
     font-family: Roboto;
@@ -290,12 +432,27 @@ background-color: #DBDBDB;
     letter-spacing: 0em;
     text-align: left;
   }
-.grupo-dos{
+
+  @media (min-width: 800px) and (orientation: landscape){
+    .copyright{
+        margin: 18px 0 0 18px;
+    }
+  }
+.grupo-dos-redes{
     display: flex;
-    vertical-align: middle;
+    flex-direction: column;
+    gap: 30px;
     padding-top: 20px;
     }
-
+@media (min-width: 800px) and (orientation: landscape){
+    .grupo-dos-redes{
+       display: inline-flex;
+       padding-left: 350px;
+       }
+}
+.grupo-dos{
+    align-items: center; 
+}
 .redes-sociales {
 display: inline;
   width: 38px;
@@ -305,7 +462,6 @@ display: inline;
 
 .nombre-redes-sociales{
 display: inline;
-  
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
