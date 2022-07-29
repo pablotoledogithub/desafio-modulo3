@@ -188,23 +188,25 @@
 
 .contenedor-logo-dos{
     width: 100%;
+    display: flex;
 }
 @media (min-width: 800px) and (orientation: landscape){
     .contenedor-logo-dos{
        width: 400px;
-
+       
     }
 }
 
 .logo-check-dos{
     width: 80px;
     height: 80px;
-    margin: 0 148px;
+    margin: auto;
 }
 @media (min-width: 800px) and (orientation: landscape){
     .logo-check-dos{
         width: 200px;
         height: 200px;
+
        
     }
 }
@@ -347,14 +349,14 @@
     letter-spacing: 0em;
     text-align: left;
     color: #FAFAFA;
-    margin: 36.42px 0 9px 0;
+    
     
 }
 .form{
  margin-top: 20px;
  width: 100%;
  display: grid;
-gap:40px ;
+gap:30px ;
 max-width: 450px;
 color:#FAFAFA;
 justify-items:  center;
@@ -362,7 +364,8 @@ align-items: center;
 }
 
 .grupo-mensaje{
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .input-text{
     background-color:#FFFFFF;
@@ -397,7 +400,7 @@ background-color: #DBDBDB;
 }
 @media (min-width: 800px) and (orientation: landscape){
     .pie-pagina{
-    height: 346px;
+    display: flex;
     }
 }
 
@@ -453,6 +456,11 @@ background-color: #DBDBDB;
 }
 .grupo-dos{
     align-items: center; 
+}
+@media (min-width: 800px) and (orientation: landscape){
+    .grupo-dos{
+        display: flex; 
+    }
 }
 .redes-sociales {
 display: inline;
