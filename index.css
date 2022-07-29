@@ -142,9 +142,10 @@
     .contenedor-presentacion-texto {
         display: flex;
       flex-direction: column;
-      max-width: 532px;
-      
+      width: 532px;
       margin-bottom: 40px;
+      margin-right: 100px;
+
     }
   }
 
@@ -190,7 +191,7 @@
 }
 @media (min-width: 800px) and (orientation: landscape){
     .contenedor-logo-dos{
-       width: 500px;
+       width: 400px;
 
     }
 }
@@ -204,7 +205,7 @@
     .logo-check-dos{
         width: 200px;
         height: 200px;
-        margin-left: 200px;
+       
     }
 }
 
